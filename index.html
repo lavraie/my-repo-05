@@ -16,16 +16,15 @@ Promise.all(urls.map(url =>
   ))
   .then(data => {
     console.log(data);
-  var data1 =[];
-  data1 = data;
+  var data1 = data;
   console.log(data1[1]);
-  
+  return [data, data1];
     // do something with the data
   })
-//   .then(data => {
-//     console.log(data[0]);
-//     // do something with the data
-//   })
+  .then((data, data1) => {
+    console.log(data1[0]);
+    // do something with the data
+  })
         
 function parseJSON(response) {
   return response.json();
