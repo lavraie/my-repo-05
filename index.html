@@ -18,7 +18,10 @@ Promise.all(urls.map(url =>
     console.log(data);
     // do something with the data
   })
-  .then(data => {console.log(data[0])});
+  .then(data => {
+    console.log(data[0]);
+    // do something with the data
+  })
         
 function parseJSON(response) {
   return response.json();
