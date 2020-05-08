@@ -16,7 +16,7 @@ Promise.all(urls.map(url =>
   ))
   .then(data => {
     console.log(data);
-  var data1 = data;
+  const data1 = data.map();
   console.log(data1[1]);
   return [data, data1];
     // do something with the data
