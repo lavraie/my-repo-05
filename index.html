@@ -15,7 +15,7 @@ Promise.all(urls.map(url =>
     .then(parseJSON)
   ))
   .then(data => {
-    console.log(data);
+    //console.log(data);
   const data1 = JSON.parse(JSON.stringify(data));
   console.log(data1[1]);
   return [data, data1];
